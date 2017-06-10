@@ -1,0 +1,155 @@
+// Place all the styles related to the Top controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+header {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #CCFFFF;
+  height: 54px;
+}
+
+header ul {
+  
+  list-style: none;
+  margin-left: 50px
+}
+
+header ul a {
+  font-size: 1.8em;
+    padding: 10px 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    border-style: none;
+    box-shadow: 2px 2px 3px 1px #666;
+    -moz-box-shadow: 2px 2px 3px 1px #666;
+    -webkit-box-shadow: 2px 2px 3px 1px #666;
+    text-shadow: 1px 1px 2px #000;
+    background: -moz-linear-gradient(bottom, #36d, #248 50%, #36d);
+    background: -webkit-gradient(linear, left bottom, left top, from(#36d), color-stop(0.5, #248), to(#36d));
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+header ul a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+
+header li {
+  margin-top: 10px;
+  float: left;
+  width: auto;
+}
+
+header ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.main-header {
+  display: block;
+  width: 50%;
+  background-size: cover;
+  background-image: url("header.jpg");
+  background-attachment: fixed;
+}
+
+.main-header img {
+  margin: 0 ;
+  width: 123%;
+  height: 1000px
+}
+
+.about {
+  background-color: white;
+  color: #333;
+  padding: 5px;
+}
+
+.function {
+  background-color: #e9e9e9;
+  padding: 5px;
+  padding-bottom: 25px;
+}
+
+.function-images {
+  width: 100%;
+  display: table;
+  margin-top: 60px;
+  table-layout: fixed;
+}
+
+.function-image {
+  display: table-cell;
+  width: 100%;
+}
+
+.btnbtn-default {
+  font-size: 1.5em;
+    padding: 3px;
+    color: #fff;
+    border-style: none;
+    box-shadow: 2px 2px 3px 1px #666;
+    -moz-box-shadow: 2px 2px 3px 1px #666;
+    -webkit-box-shadow: 2px 2px 3px 1px #666;
+    text-shadow: 1px 1px 2px #000;
+    background: -moz-linear-gradient(bottom, #36d, #248 50%, #36d);
+    background: -webkit-gradient(linear, left bottom, left top, from(#36d), color-stop(0.5, #248), to(#36d));
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+footer {
+  width: 100%;
+  background-color:#CCFFFF;
+  padding: 5px 0 5px 0;
+  color: #000088;
+  margin: auto;
+  padding-bottom: 5px;
+  font-size: 15px;
+  position: absolute;
+  bottom: 0;
+  position: fixed;
+}
+
+html {
+  position: relative;
+  min-height: 10%;
+}
+
+body {
+  text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.container {
+    width: 1440px; height: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px; 
+    padding-right: 0px;
+    padding-bottom: 1px;
+}
+
+.row {
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color:#CCFFFF;
+}
+
+.container-fluid {
+    background-color:#CCFFFF;
+}
+
+img {
+  width: 275px; height: 180px;
+}
