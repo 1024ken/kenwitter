@@ -1,20 +1,26 @@
-<div class="container">
-  <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
-   <h3>以下の内容で、送信する。</h3>
-   <%= form_for(@tweet) do |f| %>
-    <%= f.hidden_field :name %>
-    <%= f.hidden_field :title %>
-    <%= f.hidden_field :comment %>
-    <p>名前:<%= @tweet.name %></p>
-    <p>タイトル:<%= @tweet.title %></p>
-    <p>コメント:<%= @tweet.comment %></p>
-    <%= f.submit "登録する", class: 'btn btn-primary btn-block' %>
-   <% end %>
-   <%= form_for(@tweet, url: new_tweet_path, method:'get') do |f| %>
-    <%= f.hidden_field :name %>
-    <%= f.hidden_field :title %>
-    <%= f.hidden_field :comment %>
-    <%= f.submit "戻る", name: 'back', class: 'btn btn-default btn-block' %>
-   <% end %>
+<div class="container-tweets">
+  <div class="wrapper col-md-8 col-md-offset-2 col-sm-10-tweets">
+    <div class="tweets-comment"><h3>以下の内容で、送信する。</h3></div>
+    <div class="tweet-main">
+      <div class="tweet-entries">
+        <%= form_for(@tweet) do |f| %>
+        <%= f.hidden_field :name %>
+        <%= f.hidden_field :title %>
+        <%= f.hidden_field :comment %>
+        <p>名前 : <%= @tweet.name %></p>
+        <p>タイトル : <%= @tweet.title %></p>
+        <p>コメント : <%= @tweet.comment %></p>
+      </div>
+      <div class="tweet-entries-button">
+        <%= f.submit "登録する", class: 'btn btn-primary btn-block' %>
+        <%= f.submit "戻る", name: 'back', class: 'btn btn-default btn-block' %>
+      </div>
+    </div>
+    <% end %>
+    <%= form_for(@tweet, url: new_tweet_path, method:'get') do |f| %>
+      <%= f.hidden_field :name %>
+      <%= f.hidden_field :title %>
+      <%= f.hidden_field :comment %>
+    <% end %>
   </div>
 </div>

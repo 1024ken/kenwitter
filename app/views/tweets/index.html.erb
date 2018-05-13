@@ -1,16 +1,22 @@
-<div class="container">
-  <div class="wrapper col-md-8 col-md-offset-2 col-sm-10">
-   <p><%= notice %></p>
-   <h1>Tweet一覧</h1>
-    <%= link_to "tweetを作成する", new_tweet_path, class: 'btnbtn-default' %>
-   <% @tweets.each do |tweet|%>
-   <div class="row">
-      <p><%= tweet.name %></p>
-      <p><%= tweet.title %></p>
-      <p><%= tweet.comment %></p>
-      <%= link_to "編集", edit_tweet_path(tweet.id), class: 'btn btn-default btn-sm btn-success' %>
-      <%= link_to "削除", tweet_path(tweet.id), method: :delete, data: { confirm: '本当に削除していいですか？'}, class: 'btn btn-default btn-sm btn btn-danger' %>
+<div class="container-tweets">
+  <div class="wrapper col-md-8 col-md-offset-2 col-sm-10-tweets">
+    <p><%= notice %></p>
+    <div class="tweets-title"><h1>kewitter一覧</h1></div>
+    <div class="tweets-button">
+      <%= link_to "Make tweet", new_tweet_path, class: 'btnbtn-default' %>
     </div>
+    <% @tweets.each do |tweet|%>
+      <div class="tweet-main">
+        <div class="tweet-entries">
+          <p>NAME : <%= tweet.name %></p>
+          <p>TITLE : <%= tweet.title %></p>
+          <p>COMMENTS : <%= tweet.comment %></p>
+        </div>
+        <div class="tweet-entries-button">
+          <%= link_to "編集", edit_tweet_path(tweet.id), class: 'btn btn-default btn-sm btn-primary' %>
+          <%= link_to "削除", tweet_path(tweet.id), method: :delete, data: { confirm: '本当に削除していいですか？'}, class: 'btn btn-default btn-sm btn btn-danger' %>
+        </div>
+      </div>
     <% end %>
   </div>
 </div>

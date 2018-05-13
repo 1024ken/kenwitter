@@ -4,8 +4,18 @@ class ContactsController < ApplicationController
   end
   
   def create
-   Contact.create(contact_params)
-  end
+    @contact = Contact.new(contact_params)
+    if @contact.save
+     redirect_to new_contact_path, notice: "お問い合わせありがとうございました！"
+    else
+     render 'new'
+    end
+   end
+  
+   def confirm
+    @contact = Contact.new(contacts_params)
+    render :new if @contact.invalid?
+   end
 
  private
   def contact_params

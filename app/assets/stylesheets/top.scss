@@ -2,154 +2,97 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-header {
-  margin: 0 auto;
-  width: 100%;
-  background-color: #e0ffff;
-  height: 54px;
-  position: fixed;
+.container-top {
+  padding-bottom: 1px;
 }
 
-header ul {
-  list-style: none;
-  margin-left: 50px
-}
-
-header ul a {
-    font-size: 1.8em;
-    padding: 10px 30px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    color: #fff;
-    border-style: none;
-    box-shadow: 2px 2px 3px 1px #666;
-    -moz-box-shadow: 2px 2px 3px 1px #666;
-    -webkit-box-shadow: 2px 2px 3px 1px #666;
-    text-shadow: 1px 1px 2px #000;
-    background: -moz-linear-gradient(bottom, #36d, #248 50%, #36d);
-    background: -webkit-gradient(linear, left bottom, left top, from(#36d), color-stop(0.5, #248), to(#36d));
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-
-header ul a:hover {
-    text-decoration: none;
-    opacity: 0.8;
-}
-
-
-header li {
-  margin-top: 10px;
-  float: left;
-  width: auto;
-}
-
-header ul:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.main-header {
-  display: block;
-  width: 50%;
-  background-size: cover;
-  background-image: url("header.jpg");
-  background-attachment: fixed;
-}
-
-.main-header img {
-  margin: 0 ;
-  width: 133.5%;
-  height: 1000px
-}
-
-.about {
-  background-color: white;
-  color: #333;
-  padding: 5px;
-}
-
-.function {
-  background-color: #e9e9e9;
-  padding: 5px;
-  padding-bottom: 25px;
-}
-
-.function-images {
-  width: 100%;
-  display: table;
-  margin-top: 60px;
-  table-layout: fixed;
-}
-
-.function-image {
-  display: table-cell;
-  width: 100%;
-}
-
-.btnbtn-default {
-  font-size: 1.5em;
-    padding: 3px;
-    color: #fff;
-    border-style: none;
-    box-shadow: 2px 2px 3px 1px #666;
-    -moz-box-shadow: 2px 2px 3px 1px #666;
-    -webkit-box-shadow: 2px 2px 3px 1px #666;
-    text-shadow: 1px 1px 2px #000;
-    background: -moz-linear-gradient(bottom, #36d, #248 50%, #36d);
-    background: -webkit-gradient(linear, left bottom, left top, from(#36d), color-stop(0.5, #248), to(#36d));
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-
-footer {
-  width: 100%;
-  background-color:#CCFFFF;
-  padding: 5px 0 5px 0;
-  color: #e0ffff;
-  margin: auto;
-  padding-bottom: 5px;
-  font-size: 15px;
+.main-title {
+  left: calc(52% - 10%);
+  margin-top: 10%;
   position: absolute;
-  bottom: 0;
-  position: relative;
+  color: #fff;
+  font-size: 3em;
 }
 
-html {
-  position: relative;
-  min-height: 10%;
+.main-image-top {
+  width: 100%; 
+  height: 50%;
+  padding-top: 55px;
 }
 
-body {
+.top-discription {
   text-align: center;
+
+  .top-discription1 {
+    font-size: 3em;
+    font-family: "ＭＳ P明朝",serif;
+  }
 }
 
-a:hover {
-    text-decoration: none;
-}
+.function-container-top {
+  width: 100%;
+  height: 100%;
+  padding: 3px;
+  background-color:#CCFFFF;
 
-.container {
-    width: 1440px; height: 1000px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 1px;
-}
+  .application-discription {
+    text-align: center;
+    font-family: "ＭＳ P明朝",serif;
 
-.row {
-    margin-left: 15px;
-    margin-right: 15px;
-    background-color:#CCFFFF;
-}
+    h2 {
+      margin: 15px;
+    }
+  }
 
-.container-fluid {
-    background-color:#CCFFFF;
-}
+    .top-images {
+      margin-bottom: 12%;
+      left: calc(50% - 10%);
+    }
+    
+    .top-images::after {
+      content: '';
+      float: left;
+      display: block;
+      clear: both;
+    }
 
-img {
-  width: 275px; height: 180px;
+    .top-image1 {
+      margin-left: 8%;
+      float: left;
+
+        img {
+          width: 260px;
+          height: 150px;
+        }
+    }
+
+    .top-image2 {
+      margin-left: 10%;
+      float: left;
+
+        img {
+          width: 260px;
+          height: 150px;
+        }
+    }
+
+    .top-image3 {
+      margin-left: 10%;
+      float: left;
+
+        img {
+          width: 260px;
+          height: 150px;
+        }
+    }
+
+    .top-image4 {
+      margin-left: 10%;
+      float: left;
+
+        img {
+          width: 260px;
+          height: 150px;
+        }
+    }
 }

@@ -1,12 +1,21 @@
-<%= form_for(@contact) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <br>
-  <%= f.label :email %>
-  <%= f.text_field :email %>
-  <br>
-  <%= f.label :content %>
-  <%= f.text_field :content %>
-  <br>
-  <%= f.submit %>
-<% end %>
+<div class="container-contacts">
+  <div class="wrapper col-md-8 col-md-offset-2 col-sm-10-contacts">
+    <div class="contacts-title"><h1>お問い合わせ一覧</h1></div>
+    <%= form_for(@contact) do |f| %>
+      <div class="contact-main">
+        <div class="contact-entries">
+          <%= f.label :name %>
+          <%= f.text_field :name, class: 'form-control' %>
+          <br>
+          <%= f.label :email %>
+          <%= f.text_field :email, class: 'form-control' %>
+          <br>
+          <%= f.label :content %>
+          <%= f.text_field :content, class: 'form-control' %>
+          <br>
+          <%= f.submit 'お問い合わせを投稿する', class: 'btn btn-primary btn-block' %>
+          <% end %>
+        </div>
+      </div>
+  </div>
+</div>
