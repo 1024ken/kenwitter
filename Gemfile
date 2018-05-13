@@ -47,4 +47,8 @@ end
 
 gem 'twitter-bootstrap-rails'
 
+<<<<<<< HEAD
 
+=======
+gem 'rails_12factor', group: :production
+>>>>>>> 80c9735cf092f057edf03a390edf5ff05b144581
